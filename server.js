@@ -33,6 +33,13 @@ var dreams = [
   "Wash the dishes"
 ];
 
+
+    let fs = require('fs');
+    var aki=fs.readFile('aki.json', 'utf-8', (err, data) => {  if(err) {    console.log('error: ', err);  } 
+                                                        else {    console.log(data);  }
+                                                       }
+               );
+
 // listen for requests :)
 var listener = app.listen(process.env.PORT, function () {
   console.log('Your app is listening on port ' + listener.address().port);

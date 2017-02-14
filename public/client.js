@@ -45,10 +45,17 @@ $(function() {
   });
 
   $('form').submit(function(event) {
+    
     event.preventDefault();
     var dream = $('input').val();
-    
-circle.bindPopup("I am a circle.");
+  $.get('/aki.json', function(aki) {console.log(aki[2].origen);
+  });
+     /*$.getJSON("aki.json", function(nodos) {
+                
+circle.bindPopup(nodos[2].origen);                
+       console.log ("oy2: "+nodos[2].destino);
+            });
+*/
 polygon.bindPopup("<b>CTO</b><br>"+dream).openPopup();
     $.post('/dreams?' + $.param({dream: dream}), function() {
       $('<li></li>').text(dream).appendTo('ul#dreams');

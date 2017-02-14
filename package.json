@@ -3,9 +3,9 @@
   "//2": "https://docs.npmjs.com/files/package.json",
   "//3": "updating this file will download and update your packages",
 
-  "name": "my-gomix-app",
+  "name": "localiza CTO",
   "version": "0.0.1",
-  "description": "What am I about?",
+  "description": "ver camino a cabecera",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
@@ -20,8 +20,8 @@
     "url": "https://gomix.com/#!/project/welcome-project"
   },
   "keywords": [
-    "node",
-    "gomix",
-    "express"
+    "CTO",
+    "splitter",
+    "fiber"
   ]
 }
